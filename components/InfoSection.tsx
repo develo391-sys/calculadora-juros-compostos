@@ -10,23 +10,23 @@ const InfoSection: React.FC = () => {
         </p>
         <ul className="space-y-4">
           <li className="flex items-start">
-            <span className="flex-shrink-0 flex items-center justify-center w-8 h-8 rounded-full bg-red-100 text-red-800 font-bold mr-3">1</span>
+            <span className="flex-shrink-0 flex items-center justify-center w-8 h-8 rounded-full bg-[#2C3FA5]/20 text-[#2C3FA5] font-bold mr-3">1</span>
             <p><strong className="font-semibold text-gray-900">Passo 1:</strong> Preencha o campo “valor inicial” com a quantia que você irá investir inicialmente. Caso não tenha nada para começar, pode deixar como 0.</p>
           </li>
           <li className="flex items-start">
-            <span className="flex-shrink-0 flex items-center justify-center w-8 h-8 rounded-full bg-red-100 text-red-800 font-bold mr-3">2</span>
+            <span className="flex-shrink-0 flex items-center justify-center w-8 h-8 rounded-full bg-[#2C3FA5]/20 text-[#2C3FA5] font-bold mr-3">2</span>
             <p><strong className="font-semibold text-gray-900">Passo 2:</strong> No campo “valor mensal”, coloque o quanto você pretende investir por mês de forma recorrente.</p>
           </li>
           <li className="flex items-start">
-            <span className="flex-shrink-0 flex items-center justify-center w-8 h-8 rounded-full bg-red-100 text-red-800 font-bold mr-3">3</span>
+            <span className="flex-shrink-0 flex items-center justify-center w-8 h-8 rounded-full bg-[#2C3FA5]/20 text-[#2C3FA5] font-bold mr-3">3</span>
             <p><strong className="font-semibold text-gray-900">Passo 3:</strong> No campo “taxa de juros”, informe a rentabilidade esperada. Lembre-se de selecionar se a taxa é mensal ou anual.</p>
           </li>
           <li className="flex items-start">
-            <span className="flex-shrink-0 flex items-center justify-center w-8 h-8 rounded-full bg-red-100 text-red-800 font-bold mr-3">4</span>
+            <span className="flex-shrink-0 flex items-center justify-center w-8 h-8 rounded-full bg-[#2C3FA5]/20 text-[#2C3FA5] font-bold mr-3">4</span>
             <p><strong className="font-semibold text-gray-900">Passo 4:</strong> Preencha o campo “período” com o tempo que você deixará o dinheiro rendendo.</p>
           </li>
           <li className="flex items-start">
-            <span className="flex-shrink-0 flex items-center justify-center w-8 h-8 rounded-full bg-red-100 text-red-800 font-bold mr-3">5</span>
+            <span className="flex-shrink-0 flex items-center justify-center w-8 h-8 rounded-full bg-[#2C3FA5]/20 text-[#2C3FA5] font-bold mr-3">5</span>
             <p><strong className="font-semibold text-gray-900">Passo 5:</strong> Clique em “Calcular” para ver o resultado detalhado em gráficos e tabelas.</p>
           </li>
         </ul>
@@ -58,8 +58,8 @@ const InfoSection: React.FC = () => {
         </div>
       </div>
 
-      <div className="bg-red-50 p-8 rounded-lg border border-red-100">
-        <h3 className="text-xl font-bold text-red-800 mb-4">O Poder do Longo Prazo</h3>
+      <div className="bg-[#2C3FA5]/10 p-8 rounded-lg border border-[#2C3FA5]/30">
+        <h3 className="text-xl font-bold text-[#2C3FA5] mb-4">O Poder do Longo Prazo</h3>
         <p className="mb-4">
           Como Albert Einstein supostamente disse: <em>"juros compostos são a oitava maravilha do mundo"</em>. 
         </p>

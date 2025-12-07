@@ -10,7 +10,7 @@ const ResultsTable: React.FC<ResultsTableProps> = ({ data }) => {
   return (
     <div className="bg-white rounded-lg shadow-md border border-gray-200 overflow-hidden mb-8">
        <div className="p-4 bg-gray-50 border-b border-gray-200">
-        <h3 className="text-lg font-bold text-red-800 text-center">Tabela Detalhada (Mês a Mês)</h3>
+        <h3 className="text-lg font-bold text-[#2C3FA5] text-center">Tabela Detalhada (Mês a Mês)</h3>
       </div>
       <div className="overflow-x-auto max-h-[500px] overflow-y-auto">
         <table className="min-w-full divide-y divide-gray-200 text-sm">
@@ -28,7 +28,7 @@ const ResultsTable: React.FC<ResultsTableProps> = ({ data }) => {
               <th scope="col" className="px-6 py-3 text-right text-xs font-bold text-gray-600 uppercase tracking-wider">
                 Total Juros
               </th>
-              <th scope="col" className="px-6 py-3 text-right text-xs font-bold text-gray-600 uppercase tracking-wider bg-red-50 text-red-900">
+              <th scope="col" className="px-6 py-3 text-right text-xs font-bold text-gray-600 uppercase tracking-wider bg-[#2C3FA5]/10 text-[#2C3FA5]">
                 Total Acumulado
               </th>
             </tr>
@@ -48,7 +48,7 @@ const ResultsTable: React.FC<ResultsTableProps> = ({ data }) => {
                 <td className="px-6 py-4 whitespace-nowrap text-right text-green-600 font-medium">
                   {formatCurrency(row.totalInterest)}
                 </td>
-                <td className="px-6 py-4 whitespace-nowrap text-right font-bold text-red-800 bg-red-50">
+                <td className="px-6 py-4 whitespace-nowrap text-right font-bold text-[#2C3FA5] bg-[#2C3FA5]/10">
                   {formatCurrency(row.totalAccumulated)}
                 </td>
               </tr>

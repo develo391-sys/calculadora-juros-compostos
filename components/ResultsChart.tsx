@@ -23,7 +23,7 @@ const ResultsChart: React.FC<ResultsChartProps> = ({ data }) => {
 
   return (
     <div className="bg-white p-6 rounded-lg shadow-md border border-gray-200 mb-8">
-      <h3 className="text-lg font-bold text-red-800 mb-6 text-center">Evolução do Patrimônio</h3>
+      <h3 className="text-lg font-bold text-[#2C3FA5] mb-6 text-center">Evolução do Patrimônio</h3>
       <div className="h-[400px] w-full">
         <ResponsiveContainer width="100%" height="100%">
           <LineChart
@@ -58,7 +58,7 @@ const ResultsChart: React.FC<ResultsChartProps> = ({ data }) => {
               type="monotone"
               dataKey="totalAccumulated"
               name="Total Acumulado"
-              stroke="#991b1b" // red-800
+              stroke="#2C3FA5" // Custom Blue
               strokeWidth={3}
               dot={false}
               activeDot={{ r: 6 }}

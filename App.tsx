@@ -77,9 +77,9 @@ const App: React.FC = () => {
           {result && (
             <section id="results-section" className="animate-fade-in-up">
               <div className="flex items-center mb-6">
-                 <div className="h-1 bg-red-800 flex-grow rounded"></div>
+                 <div className="h-1 bg-[#2C3FA5] flex-grow rounded"></div>
                  <h2 className="text-2xl font-bold text-gray-900 px-4">Resultado</h2>
-                 <div className="h-1 bg-red-800 flex-grow rounded"></div>
+                 <div className="h-1 bg-[#2C3FA5] flex-grow rounded"></div>
               </div>
               
               <SummaryCards

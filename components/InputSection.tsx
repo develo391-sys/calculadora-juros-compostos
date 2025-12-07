@@ -29,7 +29,7 @@ const InputSection: React.FC<InputSectionProps> = ({ values, onChange, onCalcula
 
   return (
     <div className="bg-white p-6 rounded-lg shadow-md border border-gray-200">
-      <h2 className="text-2xl font-bold text-red-800 mb-6">Simulador de Juros Compostos</h2>
+      <h2 className="text-2xl font-bold text-[#2C3FA5] mb-6">Simulador de Juros Compostos</h2>
       
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
         {/* Valor Inicial */}
@@ -42,7 +42,7 @@ const InputSection: React.FC<InputSectionProps> = ({ values, onChange, onCalcula
               inputMode="numeric"
               value={formatCurrencyValue(values.initialValue)}
               onChange={(e) => handleCurrencyChange(e, 'initialValue')}
-              className="w-full pl-10 pr-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-red-500 bg-white text-gray-900"
+              className="w-full pl-10 pr-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#2C3FA5] focus:border-[#2C3FA5] bg-white text-gray-900"
               placeholder="0,00"
             />
           </div>
@@ -58,7 +58,7 @@ const InputSection: React.FC<InputSectionProps> = ({ values, onChange, onCalcula
               inputMode="numeric"
               value={formatCurrencyValue(values.monthlyValue)}
               onChange={(e) => handleCurrencyChange(e, 'monthlyValue')}
-              className="w-full pl-10 pr-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-red-500 bg-white text-gray-900"
+              className="w-full pl-10 pr-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#2C3FA5] focus:border-[#2C3FA5] bg-white text-gray-900"
               placeholder="0,00"
             />
           </div>
@@ -76,14 +76,14 @@ const InputSection: React.FC<InputSectionProps> = ({ values, onChange, onCalcula
                 step="0.01"
                 value={values.interestRate || ''}
                 onChange={(e) => handleInputChange(e, 'interestRate')}
-                className="w-full pl-8 pr-3 py-2 border border-gray-300 rounded-l-md focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-red-500 bg-white text-gray-900"
+                className="w-full pl-8 pr-3 py-2 border border-gray-300 rounded-l-md focus:outline-none focus:ring-2 focus:ring-[#2C3FA5] focus:border-[#2C3FA5] bg-white text-gray-900"
                 placeholder="0.00"
               />
             </div>
             <select
               value={values.ratePeriod}
               onChange={(e) => onChange('ratePeriod', e.target.value)}
-              className="bg-gray-50 border border-l-0 border-gray-300 text-gray-700 py-2 px-3 rounded-r-md focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-red-500"
+              className="bg-gray-50 border border-l-0 border-gray-300 text-gray-700 py-2 px-3 rounded-r-md focus:outline-none focus:ring-2 focus:ring-[#2C3FA5] focus:border-[#2C3FA5]"
             >
               <option value="monthly">mensal</option>
               <option value="yearly">anual</option>
@@ -100,13 +100,13 @@ const InputSection: React.FC<InputSectionProps> = ({ values, onChange, onCalcula
               min="1"
               value={values.periodValue || ''}
               onChange={(e) => handleInputChange(e, 'periodValue')}
-              className="w-full px-3 py-2 border border-gray-300 rounded-l-md focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-red-500 bg-white text-gray-900"
+              className="w-full px-3 py-2 border border-gray-300 rounded-l-md focus:outline-none focus:ring-2 focus:ring-[#2C3FA5] focus:border-[#2C3FA5] bg-white text-gray-900"
               placeholder="1"
             />
             <select
               value={values.periodType}
               onChange={(e) => onChange('periodType', e.target.value)}
-              className="bg-gray-50 border border-l-0 border-gray-300 text-gray-700 py-2 px-3 rounded-r-md focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-red-500"
+              className="bg-gray-50 border border-l-0 border-gray-300 text-gray-700 py-2 px-3 rounded-r-md focus:outline-none focus:ring-2 focus:ring-[#2C3FA5] focus:border-[#2C3FA5]"
             >
               <option value="years">anos</option>
               <option value="months">meses</option>
@@ -118,13 +118,13 @@ const InputSection: React.FC<InputSectionProps> = ({ values, onChange, onCalcula
       <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
         <button
           onClick={onCalculate}
-          className="w-full sm:w-auto bg-red-800 hover:bg-red-900 text-white font-semibold py-3 px-8 rounded-md transition duration-200 shadow-sm"
+          className="w-full sm:w-auto bg-[#2C3FA5] hover:brightness-90 text-white font-semibold py-3 px-8 rounded-md transition duration-200 shadow-sm"
         >
           Calcular
         </button>
         <button
           onClick={onClear}
-          className="text-gray-600 hover:text-red-800 font-medium transition duration-200"
+          className="text-gray-600 hover:text-[#2C3FA5] font-medium transition duration-200"
         >
           Limpar
         </button>
